@@ -44,8 +44,10 @@
       <h5>News Report</h5>
       <p>
       <% for article in @article %>
-   <%= article["title"] %>
+   <%= article["title"]%>, <%=article ["url"] %>
     <% end %></p>
+
+    <p><%=@news%></p>
     </div>
   </div>
 </body>
